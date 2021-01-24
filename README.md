@@ -37,6 +37,21 @@
 - [UI Repository](https://github.com/subishsubash/ecommerce-ui)
 
 ----
+```
+docker pull mongo
+docker pull docker pull subash12396/ecommerce:ecommerce
+docker run --name mongodb -d mongo
+docker run -p 8080:8080 --link mongodb:mongo --name ecommerce-container  -d subash12396/ecommerce:ecommerce
+```
 
+<h2>Testing</h2>
+
+>Microservice APIs
+
+ ```
+ http://192.168.99.100:8080
+ ```
+
+ >Note: Replace the IP with docker enviornment
  
 
