@@ -1,4 +1,4 @@
-<h1>Ecommerce Site</h1>
+<h1>Ecommerce website</h1>
 <h2>What it does</h2>
 
 
