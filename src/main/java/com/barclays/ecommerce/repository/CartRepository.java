@@ -1,7 +1,6 @@
 package com.barclays.ecommerce.repository;
 
 import com.barclays.ecommerce.model.Cart;
-import com.barclays.ecommerce.model.Product;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;

@@ -24,8 +24,8 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
-        image: subash12396/eCommerce
-        tag: emi-eCommerce
+        image: subash12396/ecommerce
+        tag: emi-ecommerce
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
