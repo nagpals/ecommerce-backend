@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.barclays.ecommerce </groupId>
 	<artifactId>barclays-ecommerce</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1</version>
 	<packaging>jar</packaging>
 	<name>barclays-ecommerce</name>
 	<description>Barclays ecommerce site</description>
