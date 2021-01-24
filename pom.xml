@@ -11,7 +11,7 @@
 	<groupId>com.barclays.ecommerce </groupId>
 	<artifactId>barclays-ecommerce</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>barclays-ecommerce</name>
 	<description>Barclays ecommerce site</description>
 	<properties>
