@@ -168,7 +168,7 @@ public class ECommerceController {
     @ResponseBody
     public JSONObject makePayment(@RequestBody JSONObject jsonObject) {
         String uuid = GenericLogger.getUUID();
-        GenericLogger.logRequest(logger, uuid, ECommerceConstants.ADD_CART, "POST", jsonObject);
+        GenericLogger.logRequest(logger, uuid, ECommerceConstants.CREATE_ORDER, "POST", jsonObject);
         return orderManagementService.makePayment(uuid, jsonObject);
     }
 
@@ -184,7 +184,7 @@ public class ECommerceController {
     @ResponseBody
     public ECommerceResponse removeProductIntoCart(@PathVariable("productId") String productId, @PathVariable("userId") String userId) {
         String uuid = GenericLogger.getUUID();
-        GenericLogger.logRequest(logger, uuid, ECommerceConstants.ADD_CART, "GET", userId + productId);
+        GenericLogger.logRequest(logger, uuid, ECommerceConstants.DELETE_CART, "GET", userId + productId);
         return productManagementService.removeProductIntoCart(uuid, userId, productId );
     }
 }

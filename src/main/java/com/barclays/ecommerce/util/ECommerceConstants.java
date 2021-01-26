@@ -20,10 +20,13 @@ public class ECommerceConstants {
     // Operation Id
     public final static String CREATE_USER = "createUser";
     public final static String GET_USER = "getUser";
-    public static final String GET_LOGGED_IN = "";
-    public static final String GET_PRODUCTS = "";
-    public static final String ADD_CART = "";
-    public static final String GET_CART = "";
+    public static final String GET_LOGGED_IN = "logIn";
+    public static final String GET_PRODUCTS = "getProduct";
+    public static final String ADD_CART = "addProductInCart";
+    public static final String GET_CART = "getProductFromCart";
+    public static final String DELETE_CART = "removeProductFromCart";
+    public static final String CREATE_ORDER = "createOrder";
+
 
     // API response
     public static final String CREATE_RECORD_SUCCESS = "Record created successfully";
