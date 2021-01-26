@@ -36,11 +36,6 @@ public class ECommerceController {
     @Autowired
     private OrderManagementService orderManagementService;
 
-    @RequestMapping("/")
-    public String index() {
-        return "index.html";
-    }
-
     /**
      * Get Version
      *
