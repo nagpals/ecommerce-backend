@@ -59,7 +59,7 @@ public class ProductManagementService {
                     response.setProducts(productList);
                 }
             }
-            GenericLogger.logResponse(logger, uuid, "SUCCESS", productList);
+            GenericLogger.logResponse(logger, uuid, "SUCCESS", "Products are returned");
         } catch (Exception e) {
             response.setSuccess(false);
             response.setResponseMessage(ECommerceConstants.API_PROCESSED_FAILURE);
@@ -88,7 +88,9 @@ public class ProductManagementService {
                 product.setPrice(String.valueOf((Object) linkedHashMap.get("price")));
                 // TODO : Defulating availability count to 2 for all the books
                 product.setAvailableCount(2l);
-                productRepository.save(product);
+                if(!product.getBookID().equals("15321")) {
+                    productRepository.save(product);
+                }
             }
         } catch (
                 Exception e) {

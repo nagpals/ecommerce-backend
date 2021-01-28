@@ -35,7 +35,6 @@ public class ECommerceController {
 
     @Autowired
     private OrderManagementService orderManagementService;
-
     /**
      * Get Version
      *
@@ -109,7 +108,7 @@ public class ECommerceController {
      * @param jsonObject
      * @return
      */
-    @CrossOrigin(origins = "http://localhost:4200")
+   // @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(value = "/cart", method = RequestMethod.POST)
     @ResponseBody
     public ECommerceResponse addProductIntoCart(@RequestBody JSONObject jsonObject) {
@@ -163,7 +162,7 @@ public class ECommerceController {
      * @param jsonObject
      * @return
      */
-    @CrossOrigin(origins = "http://localhost:4200")
+    //@CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(value = "/payment", method = RequestMethod.POST)
     @ResponseBody
     public JSONObject makePayment(@RequestBody JSONObject jsonObject) {
@@ -179,7 +178,7 @@ public class ECommerceController {
      * @param userId
      * @return
      */
-    @CrossOrigin(origins = "http://localhost:4200")
+   // @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(value = "/cart/{productId}/{userId}", method = RequestMethod.DELETE)
     @ResponseBody
     public ECommerceResponse removeProductIntoCart(@PathVariable("productId") String productId, @PathVariable("userId") String userId) {
