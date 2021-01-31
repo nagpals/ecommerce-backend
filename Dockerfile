@@ -1,3 +1,2 @@
-FROM adoptopenjdk/openjdk11:alpine-jre
-ADD target/barclays-ecommerce-0.1.jar barclays-ecommerce.jar
-ENTRYPOINT ["java","-jar", "barclays-ecommerce.jar"]
+From tomcat:8-jre8
+ADD target/barclays-ecommerce-0.1.war /usr/local/tomcat/webapps/
